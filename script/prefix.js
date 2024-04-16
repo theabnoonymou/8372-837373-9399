@@ -49,5 +49,5 @@ module.exports.run = function ({ api, event, prefix, admin }) {
 	);
 
 	// Set reaction to the message
-	api.setMessageReaction("🚀", messageID, (err) => {}, true);
+	api.setMessageReaction("💦", messageID, (err) => {}, true);
 };
