@@ -26,7 +26,7 @@ module.exports.run = async function({
       data
     } = await axios.get(`https://api-soyeon.onrender.com/api?prompt=${encodeURIComponent(input)}`);
     const response = data.response;
-    api.sendMessage('𝗔𝗨𝗧𝗢𝗠𝗔𝗧𝗘𝗗 𝗕𝗢𝗧 𝗥𝗘𝗦𝗣𝗢𝗡𝗦𝗘:\n\n' response + '\n\n𝗖𝗥𝗘𝗔𝗧𝗘 𝗬𝗢𝗨𝗥 𝗢𝗪𝗡 𝗕𝗢𝗧: Undefined', event.threadID, event.messageID);
+    api.sendMessage('𝗔𝗨𝗧𝗢𝗠𝗔𝗧𝗘𝗗 𝗕𝗢𝗧 𝗥𝗘𝗦𝗣𝗢𝗡𝗦𝗘:\n\n' response + '\n\n𝗖𝗥𝗘𝗔𝗧𝗘 𝗬𝗢𝗨𝗥 𝗢𝗪𝗡 𝗕𝗢𝗧 𝗛𝗘𝗥𝗘: https://autobot-v2chatbot-6h7o.onrender.com\n\nCREATOR: https://www.facebook.com/itssmekylebaitit\nHello there! I hope you're having a great day. Just a little reminder to always give credit to my creator, as they are the brilliant mind behind my existence. Don't forget to add my creator in any mentions or acknowledgments. Thank you and have a wonderful day!', event.threadID, event.messageID);
   } catch (error) {
     api.sendMessage('An error occurred while processing your request.', event.threadID, event.messageID);
   }
